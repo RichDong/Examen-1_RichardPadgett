@@ -5,7 +5,8 @@ import java.util.ArrayList;
 public class Persona {
 
     String nombre;
-    int edad;
+    String pass;
+    String edad;
     String ID;
     String sexo;
     String estadoc;
@@ -14,8 +15,9 @@ public class Persona {
     public Persona() {
     }
 
-    public Persona(String nombre, int edad, String ID, String sexo, String estadoc) {
+    public Persona(String nombre,String pass, String edad, String ID, String sexo, String estadoc) {
         this.nombre = nombre;
+        this.pass = pass;
         this.edad = edad;
         this.ID = ID;
         this.sexo = sexo;
@@ -25,16 +27,26 @@ public class Persona {
     public String getNombre() {
         return nombre;
     }
+    
 
     public void setNombre(String nombre) {
         this.nombre = nombre;
     }
 
-    public int getEdad() {
+    public String getEdad() {
         return edad;
     }
 
-    public void setEdad(int edad) {
+    public String getPass() {
+        return pass;
+    }
+
+    public void setPass(String pass) {
+        this.pass = pass;
+    }
+    
+
+    public void setEdad(String edad) {
         this.edad = edad;
     }
 
