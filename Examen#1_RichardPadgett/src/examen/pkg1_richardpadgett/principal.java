@@ -627,7 +627,10 @@ public class principal extends javax.swing.JFrame {
 
     private void jb_guardaruserMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jb_guardaruserMouseClicked
         ///// guardar usuarios
-      listaus.add(new Persona(tf_nombrecreacion.getText(),tf_passwordcreacion.getText(),tf_edadc.getText(),tf_inicious.getText(),bg_sexo.getSelection().toString(),tf_ecivil.getText()));
+        if (rb_fam.isSelected()) {
+            listaus.add(new Familiares(bg_tipodepersona.getSelection().toString(), tf_trabajo.getText(), tf_altura.getText(), tf_peso.getText(), tf_nombrecreacion.getText(), tf_passwordcreacion.getText(), tf_edadc.getText(), tf_ID.getText(), bg_sexo.getSelection().toString(), tf_ecivil.getText()));
+        }
+
     }//GEN-LAST:event_jb_guardaruserMouseClicked
 
     /**
