@@ -11,7 +11,7 @@ public class Persona {
     String sexo;
     String estadoc;
     ArrayList<String> mensajes = new ArrayList();
-
+    
     public Persona() {
     }
 
