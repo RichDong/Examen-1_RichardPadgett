@@ -14,6 +14,14 @@ public class objetoshogar extends objetos {
     public objetoshogar() {
     }
 
+    public objetoshogar(int t_vida, String a_casa, String instruccion, Date f_compra, String color, String desc, int tamano, int calidad) {
+        super(color, desc, tamano, calidad);
+        this.t_vida = t_vida;
+        this.a_casa = a_casa;
+        this.instruccion = instruccion;
+        this.f_compra = f_compra;
+    }
+
     public objetoshogar(int t_vida, String a_casa, String instruccion, Date f_compra) {
         this.t_vida = t_vida;
         this.a_casa = a_casa;

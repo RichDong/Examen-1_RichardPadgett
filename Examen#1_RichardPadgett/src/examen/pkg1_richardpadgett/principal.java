@@ -6,6 +6,7 @@
 package examen.pkg1_richardpadgett;
 
 import java.util.ArrayList;
+import javax.swing.JOptionPane;
 
 public class principal extends javax.swing.JFrame {
 
@@ -82,7 +83,7 @@ public class principal extends javax.swing.JFrame {
         tf_color = new javax.swing.JTextField();
         jLabel17 = new javax.swing.JLabel();
         jScrollPane1 = new javax.swing.JScrollPane();
-        jTextArea1 = new javax.swing.JTextArea();
+        tf_desc = new javax.swing.JTextArea();
         jLabel18 = new javax.swing.JLabel();
         tf_tamano = new javax.swing.JTextField();
         jLabel19 = new javax.swing.JLabel();
@@ -409,15 +410,15 @@ public class principal extends javax.swing.JFrame {
         bg_tipodeobjeto.add(rb_objetoh);
         rb_objetoh.setText("Objeto de hogar");
 
-        jLabel15.setText("jLabel15");
+        jLabel15.setText("tipo de objeto");
 
         jLabel16.setText("Color");
 
         jLabel17.setText("Descripcion");
 
-        jTextArea1.setColumns(20);
-        jTextArea1.setRows(5);
-        jScrollPane1.setViewportView(jTextArea1);
+        tf_desc.setColumns(20);
+        tf_desc.setRows(5);
+        jScrollPane1.setViewportView(tf_desc);
 
         jLabel18.setText("Tamano");
 
@@ -426,6 +427,11 @@ public class principal extends javax.swing.JFrame {
         jLabel20.setText("Precio");
 
         rb_cobjeto.setText("Crear Objeto");
+        rb_cobjeto.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                rb_cobjetoMouseClicked(evt);
+            }
+        });
 
         jLabel21.setText("talla");
 
@@ -630,8 +636,25 @@ public class principal extends javax.swing.JFrame {
         if (rb_fam.isSelected()) {
             listaus.add(new Familiares(bg_tipodepersona.getSelection().toString(), tf_trabajo.getText(), tf_altura.getText(), tf_peso.getText(), tf_nombrecreacion.getText(), tf_passwordcreacion.getText(), tf_edadc.getText(), tf_ID.getText(), bg_sexo.getSelection().toString(), tf_ecivil.getText()));
         }
+        if (rb_pers.isSelected()) {
+            listaus.add(new Personal(tf_ocu.getText(), tf_horario.getText(), tf_trabajado.getText(), tf_sueldo.getText(), tf_nombrecreacion.getText(), tf_passwordcreacion.getText(), tf_edadc.getText(), tf_ID.getText(), bg_sexo.getSelection().toString(), tf_ecivil.getText()));
+        }
 
     }//GEN-LAST:event_jb_guardaruserMouseClicked
+
+    private void rb_cobjetoMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_rb_cobjetoMouseClicked
+        /// guardar objetos
+        if (rb_ropa.isSelected()) {
+            objtotal.add(new Ropa(Integer.parseInt(tf_tallaR.getText()), tf_material.getText(), tf_paisel.getText(), tf_color.getText(), tf_desc.getText(), Integer.parseInt(tf_tamano.getText()), Integer.parseInt(tf_calidad.getText())));
+        }
+        if (rb_zapato.isSelected()) {
+            objtotal.add(new zapatos(Integer.parseInt(tf_tallaz.getText()),tf_tiposuela.getText(),Integer.parseInt(tf_confort.getText()),tf_color.getText(),tf_desc.getText(),Integer.parseInt(tf_tamano.getText()),Integer.parseInt(tf_calidad.getText())));
+        }
+        if (rb_objetoh.isSelected()) {
+
+        }
+        String us = JOptionPane.showInputDialog(this, "ingrese quien es dueno de este objeto");
+    }//GEN-LAST:event_rb_cobjetoMouseClicked
 
     /**
      * @param args the command line arguments
@@ -710,7 +733,6 @@ public class principal extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel8;
     private javax.swing.JLabel jLabel9;
     private javax.swing.JScrollPane jScrollPane1;
-    private javax.swing.JTextArea jTextArea1;
     private javax.swing.JButton jb_guardaruser;
     private javax.swing.JButton rb_cobjeto;
     private javax.swing.JRadioButton rb_esposo;
@@ -731,6 +753,7 @@ public class principal extends javax.swing.JFrame {
     private javax.swing.JTextField tf_calidad;
     private javax.swing.JTextField tf_color;
     private javax.swing.JTextField tf_confort;
+    private javax.swing.JTextArea tf_desc;
     private javax.swing.JTextField tf_ecivil;
     private javax.swing.JTextField tf_edadc;
     private javax.swing.JTextField tf_horario;

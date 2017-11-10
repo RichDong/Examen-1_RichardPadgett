@@ -17,6 +17,13 @@ public class Ropa extends objetos {
     public Ropa() {
     }
 
+    public Ropa(int talla_r, String material, String pais_e, String color, String desc, int tamano, int calidad) {
+        super(color, desc, tamano, calidad);
+        this.talla_r = talla_r;
+        this.material = material;
+        this.pais_e = pais_e;
+    }
+
     public Ropa(int talla_r, String material, String pais_e) {
         this.talla_r = talla_r;
         this.material = material;

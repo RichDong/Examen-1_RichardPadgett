@@ -9,14 +9,14 @@ import java.util.ArrayList;
  */
 public class Personal extends Persona{
     String ocupacion;
-    int horario;
-    int s_trabajando;
-    int sueldo;
+    String horario;
+    String s_trabajando;
+    String sueldo;
 
     public Personal() {
     }
 
-    public Personal(String ocupacion, int horario, int s_trabajando, int sueldo, String nombre, String pass, String edad, String ID, String sexo, String estadoc) {
+    public Personal(String ocupacion, String horario, String s_trabajando,String sueldo, String nombre, String pass, String edad, String ID, String sexo, String estadoc) {
         super(nombre, pass, edad, ID, sexo, estadoc);
         this.ocupacion = ocupacion;
         this.horario = horario;
@@ -24,7 +24,7 @@ public class Personal extends Persona{
         this.sueldo = sueldo;
     }
 
-    public Personal(String ocupacion, int horario, int s_trabajando, int sueldo) {
+    public Personal(String ocupacion, String horario, String s_trabajando, String sueldo) {
         this.ocupacion = ocupacion;
         this.horario = horario;
         this.s_trabajando = s_trabajando;
@@ -95,27 +95,27 @@ public class Personal extends Persona{
         this.ocupacion = ocupacion;
     }
 
-    public int getHorario() {
+    public String getHorario() {
         return horario;
     }
 
-    public void setHorario(int horario) {
+    public void setHorario(String horario) {
         this.horario = horario;
     }
 
-    public int getS_trabajando() {
+    public String getS_trabajando() {
         return s_trabajando;
     }
 
-    public void setS_trabajando(int s_trabajando) {
+    public void setS_trabajando(String s_trabajando) {
         this.s_trabajando = s_trabajando;
     }
 
-    public int getSueldo() {
+    public String getSueldo() {
         return sueldo;
     }
 
-    public void setSueldo(int sueldo) {
+    public void setSueldo(String sueldo) {
         this.sueldo = sueldo;
     }
 
