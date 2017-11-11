@@ -834,6 +834,9 @@ public class principal extends javax.swing.JFrame {
                 JOptionPane.showMessageDialog(this, "NO SE PUEDE");
             }
         }
+        
+        
+        
         if (rb_fam.isSelected() && rb_hermano.isSelected()) {
             listaus.add(new Familiares(bg_tipodepersona.getSelection().toString(), tf_trabajo.getText(), tf_altura.getText(), tf_peso.getText(), tf_nombrecreacion.getText(), tf_passwordcreacion.getText(), tf_edadc.getText(), tf_ID.getText(), bg_sexo.getSelection().toString(), tf_ecivil.getText()));
             hermano++;
