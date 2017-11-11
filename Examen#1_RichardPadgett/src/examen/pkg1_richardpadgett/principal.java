@@ -32,13 +32,6 @@ public class principal extends javax.swing.JFrame {
         bg_tipodeobjeto = new javax.swing.ButtonGroup();
         rolesdefamilia = new javax.swing.ButtonGroup();
         todo = new javax.swing.JTabbedPane();
-        inicio = new javax.swing.JPanel();
-        jLabel30 = new javax.swing.JLabel();
-        jLabel31 = new javax.swing.JLabel();
-        jLabel32 = new javax.swing.JLabel();
-        tf_iniciodeusuario = new javax.swing.JTextField();
-        tf_pass = new javax.swing.JTextField();
-        jb_iniciarsesion = new javax.swing.JButton();
         usuarios = new javax.swing.JPanel();
         jLabel35 = new javax.swing.JLabel();
         jScrollPane3 = new javax.swing.JScrollPane();
@@ -125,63 +118,16 @@ public class principal extends javax.swing.JFrame {
         ta_instru = new javax.swing.JTextArea();
         jb_modificar = new javax.swing.JButton();
         tf_eliminar = new javax.swing.JButton();
+        inicio = new javax.swing.JPanel();
+        jLabel30 = new javax.swing.JLabel();
+        jLabel31 = new javax.swing.JLabel();
+        jLabel32 = new javax.swing.JLabel();
+        tf_iniciodeusuario = new javax.swing.JTextField();
+        tf_pass = new javax.swing.JTextField();
+        jb_iniciarsesion = new javax.swing.JButton();
+        jLabel37 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-
-        jLabel30.setText("LOG IN");
-
-        jLabel31.setText("Nombre");
-
-        jLabel32.setText("password");
-
-        jb_iniciarsesion.setText("Iniciar sesion");
-        jb_iniciarsesion.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                jb_iniciarsesionMouseClicked(evt);
-            }
-        });
-
-        javax.swing.GroupLayout inicioLayout = new javax.swing.GroupLayout(inicio);
-        inicio.setLayout(inicioLayout);
-        inicioLayout.setHorizontalGroup(
-            inicioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(inicioLayout.createSequentialGroup()
-                .addGroup(inicioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(inicioLayout.createSequentialGroup()
-                        .addGap(254, 254, 254)
-                        .addComponent(jLabel30))
-                    .addGroup(inicioLayout.createSequentialGroup()
-                        .addGap(209, 209, 209)
-                        .addGroup(inicioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel31)
-                            .addComponent(jLabel32))
-                        .addGap(35, 35, 35)
-                        .addGroup(inicioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jb_iniciarsesion)
-                            .addGroup(inicioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                .addComponent(tf_iniciodeusuario)
-                                .addComponent(tf_pass, javax.swing.GroupLayout.DEFAULT_SIZE, 97, Short.MAX_VALUE)))))
-                .addContainerGap(262, Short.MAX_VALUE))
-        );
-        inicioLayout.setVerticalGroup(
-            inicioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(inicioLayout.createSequentialGroup()
-                .addGap(93, 93, 93)
-                .addComponent(jLabel30)
-                .addGap(26, 26, 26)
-                .addGroup(inicioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel31)
-                    .addComponent(tf_iniciodeusuario, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(35, 35, 35)
-                .addGroup(inicioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel32)
-                    .addComponent(tf_pass, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(27, 27, 27)
-                .addComponent(jb_iniciarsesion)
-                .addContainerGap(288, Short.MAX_VALUE))
-        );
-
-        todo.addTab("Inicio de sesion", inicio);
 
         jLabel35.setText("bienvenido");
 
@@ -234,7 +180,7 @@ public class principal extends javax.swing.JFrame {
                                 .addGap(63, 63, 63)
                                 .addComponent(jb_enviarmensaje))
                             .addComponent(jScrollPane4, javax.swing.GroupLayout.PREFERRED_SIZE, 236, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                .addContainerGap(40, Short.MAX_VALUE))
+                .addContainerGap(234, Short.MAX_VALUE))
         );
         usuariosLayout.setVerticalGroup(
             usuariosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -253,7 +199,7 @@ public class principal extends javax.swing.JFrame {
                         .addComponent(jScrollPane3, javax.swing.GroupLayout.PREFERRED_SIZE, 248, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(18, 18, Short.MAX_VALUE)))
                 .addComponent(jScrollPane4, javax.swing.GroupLayout.PREFERRED_SIZE, 101, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(71, Short.MAX_VALUE))
+                .addContainerGap(304, Short.MAX_VALUE))
         );
 
         todo.addTab("-usuarios-", usuarios);
@@ -409,10 +355,10 @@ public class principal extends javax.swing.JFrame {
                                                 .addComponent(tf_edadc, javax.swing.GroupLayout.PREFERRED_SIZE, 77, javax.swing.GroupLayout.PREFERRED_SIZE)
                                                 .addGap(28, 28, 28)
                                                 .addComponent(jLabel33)))
-                                        .addGap(0, 32, Short.MAX_VALUE)))))
+                                        .addGap(0, 130, Short.MAX_VALUE)))))
                         .addGroup(creacionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(creacionLayout.createSequentialGroup()
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 171, Short.MAX_VALUE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 267, Short.MAX_VALUE)
                                 .addComponent(jb_guardaruser)
                                 .addGap(87, 87, 87))
                             .addGroup(creacionLayout.createSequentialGroup()
@@ -482,7 +428,7 @@ public class principal extends javax.swing.JFrame {
                         .addGroup(creacionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(jLabel9)
                             .addComponent(tf_peso, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 47, Short.MAX_VALUE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 164, Short.MAX_VALUE)
                         .addComponent(jLabel6)))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(creacionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
@@ -494,7 +440,7 @@ public class principal extends javax.swing.JFrame {
                     .addComponent(rb_hermano))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(rb_esposo)
-                .addContainerGap(53, Short.MAX_VALUE))
+                .addContainerGap(170, Short.MAX_VALUE))
         );
 
         todo.addTab("Crear usuarios", creacion);
@@ -669,7 +615,7 @@ public class principal extends javax.swing.JFrame {
                                             .addGap(20, 20, 20)
                                             .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 114, javax.swing.GroupLayout.PREFERRED_SIZE)))
                                     .addComponent(rb_objetoh))))
-                        .addContainerGap(56, Short.MAX_VALUE))))
+                        .addContainerGap(250, Short.MAX_VALUE))))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, adminLayout.createSequentialGroup()
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(rb_cobjeto)
@@ -747,7 +693,7 @@ public class principal extends javax.swing.JFrame {
                     .addGroup(adminLayout.createSequentialGroup()
                         .addGap(18, 18, 18)
                         .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 65, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 69, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 303, Short.MAX_VALUE)
                 .addGroup(adminLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(adminLayout.createSequentialGroup()
                         .addComponent(jLabel29)
@@ -758,6 +704,70 @@ public class principal extends javax.swing.JFrame {
         );
 
         todo.addTab("Admin", admin);
+
+        jLabel30.setText("LOG IN");
+
+        jLabel31.setText("Nombre");
+
+        jLabel32.setText("password");
+
+        jb_iniciarsesion.setText("Iniciar sesion");
+        jb_iniciarsesion.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jb_iniciarsesionMouseClicked(evt);
+            }
+        });
+
+        jLabel37.setIcon(new javax.swing.ImageIcon("C:\\Users\\richa\\Documents\\NetBeansProjects\\j5NOs7Dj_400x400.jpg")); // NOI18N
+        jLabel37.setText("jLabel37");
+
+        javax.swing.GroupLayout inicioLayout = new javax.swing.GroupLayout(inicio);
+        inicio.setLayout(inicioLayout);
+        inicioLayout.setHorizontalGroup(
+            inicioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(inicioLayout.createSequentialGroup()
+                .addGroup(inicioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(inicioLayout.createSequentialGroup()
+                        .addGap(290, 290, 290)
+                        .addComponent(tf_iniciodeusuario, javax.swing.GroupLayout.PREFERRED_SIZE, 97, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(inicioLayout.createSequentialGroup()
+                        .addGap(331, 331, 331)
+                        .addComponent(jLabel30))
+                    .addGroup(inicioLayout.createSequentialGroup()
+                        .addGap(142, 142, 142)
+                        .addGroup(inicioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLabel32)
+                            .addComponent(jLabel31))
+                        .addGap(102, 102, 102)
+                        .addGroup(inicioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jb_iniciarsesion)
+                            .addComponent(tf_pass, javax.swing.GroupLayout.PREFERRED_SIZE, 97, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                    .addGroup(inicioLayout.createSequentialGroup()
+                        .addGap(249, 249, 249)
+                        .addComponent(jLabel37, javax.swing.GroupLayout.PREFERRED_SIZE, 259, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap(335, Short.MAX_VALUE))
+        );
+        inicioLayout.setVerticalGroup(
+            inicioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(inicioLayout.createSequentialGroup()
+                .addGap(83, 83, 83)
+                .addComponent(jLabel30)
+                .addGap(29, 29, 29)
+                .addGroup(inicioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel31)
+                    .addComponent(tf_iniciodeusuario, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(58, 58, 58)
+                .addGroup(inicioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel32)
+                    .addComponent(tf_pass, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(53, 53, 53)
+                .addComponent(jb_iniciarsesion)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 182, Short.MAX_VALUE)
+                .addComponent(jLabel37, javax.swing.GroupLayout.PREFERRED_SIZE, 244, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(54, 54, 54))
+        );
+
+        todo.addTab("Inicio de sesion", inicio);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -1041,6 +1051,7 @@ public class principal extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel34;
     private javax.swing.JLabel jLabel35;
     private javax.swing.JLabel jLabel36;
+    private javax.swing.JLabel jLabel37;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
